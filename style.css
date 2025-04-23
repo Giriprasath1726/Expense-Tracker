@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    height: auto;
+}
+
+.container {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    margin: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.balance h3 {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.balance h1 {
+    font-size: 32px;
+}
+
+.summary {
+    display: flex;
+    text-align: center;
+    flex-direction: space-between;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.summary div {
+    background: rgba(255, 255, 255, 0.2);
+    width: 50%;
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+
+.plus {
+    color: #00ff90;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.minus {
+    color: #ff4e4e;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+#content-his {
+    padding-bottom: 20px;
+}
+
+#content-add {
+    padding-bottom: 10px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+#form input {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+}
+
+#form input::placeholder {
+    color: #fff;
+    opacity: 0.75;
+}
+
+#form button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    background: #00c6ff;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #0072ff;
+}
+
+.list {
+    list-style: none;
+    max-height: 180px;
+    overflow-y: auto;
+    padding: 0 15px 0 0;
+    margin-bottom: 20px;
+}
+
+.list li {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    padding: 12px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    border-right: 3px solid;
+    color: white;
+}
+
+.list li.plus {
+    border-color: #7dffc7;
+}
+
+.list li.minus {
+    border-color: #ff4e4e;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: rgba(255, 0, 0, 0.7);
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.list::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.list::-webkit-scrollbar-thumb {
+    background: #00c6ff;
+    border-radius: 10px;
+}
+
+.list::-webkit-scrollbar-thumb:hover {
+    background: #52d9ff;
+}
